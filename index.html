@@ -154,6 +154,110 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-blog-test" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/17/blog-test/">Hexo 博客无法上传的问题</a>
+    </h1>
+  
+
+        
+        <a href="/2017/06/17/blog-test/" class="archive-article-date">
+  	<time datetime="2017-06-17T02:12:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="test-the-commit-for-blog"><a href="#test-the-commit-for-blog" class="headerlink" title="test the commit for blog"></a>test the commit for blog</h1><p>github + Hexo 创建博客成功，已经可以在浏览器访问具有Hello Hexo的博客，但是在再次 hexo g，hexo d之后无法访问新创建的博客，新建的博客没有被提交到github中，尝试解决这个问题。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">E:\junlegaoblog\blog&gt;hexo s -p 5000</div><div class="line"></div><div class="line"></div><div class="line">E:\junlegaoblog\blog&gt;hexo new "test"</div><div class="line">INFO  Created: E:\junlegaoblog\blog\source\_posts\test-1.md</div><div class="line"></div><div class="line">E:\junlegaoblog\blog&gt;hexo s -p 5000</div><div class="line">INFO  Start processing</div><div class="line">ERROR Process failed: _posts/first blog.md</div><div class="line">TypeError: Cannot read property 'offset' of null</div><div class="line">    at Object.exports.timezone (E:\junlegaoblog\blog\node_modules\hexo\lib\plugins\processor\common.js:44:40)</div><div class="line">    at E:\junlegaoblog\blog\node_modules\hexo\lib\plugins\processor\post.js:83:42</div><div class="line">    at tryCatcher (E:\junlegaoblog\blog\node_modules\bluebird\js\release\util.js:16:23)</div><div class="line">    at Promise._settlePromiseFromHandler (E:\junlegaoblog\blog\node_modules\bluebird\js\release\promise.js:509:35)</div><div class="line">    at Promise._settlePromise (E:\junlegaoblog\blog\node_modules\bluebird\js\release\promise.js:569:18)</div><div class="line">    .......</div></pre></td></tr></table></figure>
+<p>原因是因为在配_config.yml时配置错误。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"># Site</div><div class="line">title: junlegao</div><div class="line">subtitle: <span class="string">"道可道，非常道。名可名，非常名。"</span></div><div class="line">description: <span class="string">"无为而为之，为而无为也。"</span></div><div class="line">author: <span class="string">"樂"</span></div><div class="line">language: zh-CN</div><div class="line">timezone: Asia/Nanjing</div></pre></td></tr></table></figure>
+<p>注意上面的timezone,timezone为时区，博主以为是擅自将原来的 Asia/Shanghai修改为 Asia/Nanjing，导致出现这个问题。</p>
+<p>P:问题很弱智，提出来供大家参考。同时，告诫诸位，在修改配置文件的时候，看清楚配置信心再去配置，不要导致博主这样的惨状发生，卡了好几天才发现，呜呜呜…</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/06/17/blog-test/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
+    <article id="post-first blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/15/first blog/">Hexo+github 创建注意事项</a>
+    </h1>
+  
+
+        
+        <a href="/2017/06/15/first blog/" class="archive-article-date">
+  	<time datetime="2017-06-15T13:40:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#第一篇试水博客</p>
+<p>就想说两句话，github+hexo配置博客注意几点。<br>1、仓库命名与用户名一致！仓库命名与用户名一致！仓库命名与用户名一致！<br>  such as: 我的用户名为   junlegao<br>               仓库名为  junlegao.github.io</p>
+<p>2、发布时注意需进行对hexo 进行配置<br>          即：npm install hexo-deployer-git –save<br>          也可用 cnpm install hexo-deployer-git –save(淘宝仓配好后才可)</p>
+<p>3、补充下hexo写博客流程。<br>  新建博客  hexo new “New Post”<br>  发布到服务 hexo server / hexo s<br>  静态生成   hexo generate / hexo g<br>  发布       hexo deploy / hexo d</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/06/15/first blog/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -381,7 +485,7 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">高军乐&lt;br&gt;&lt;br&gt;学习博客&lt;br&gt;谢谢</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">gorge&lt;br&gt;&lt;br&gt;firstblic&lt;br&gt;thanks</div>
   	  	
     	</section>
     
