@@ -14,7 +14,7 @@
 <meta property="og:url" content="http://gorgegao.club/2017/06/17/blog-test/index.html">
 <meta property="og:site_name" content="junlegao">
 <meta property="og:description" content="github + Hexo 创建博客成功，已经可以在浏览器访问具有Hello Hexo的博客，但是在再次 hexo g，hexo d之后无法访问新创建的博客，新建的博客没有被提交到github中，尝试解决这个问题。">
-<meta property="og:updated_time" content="2017-06-17T05:34:29.087Z">
+<meta property="og:updated_time" content="2017-07-06T01:59:48.737Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 博客无法上传的问题">
 <meta name="twitter:description" content="github + Hexo 创建博客成功，已经可以在浏览器访问具有Hello Hexo的博客，但是在再次 hexo g，hexo d之后无法访问新创建的博客，新建的博客没有被提交到github中，尝试解决这个问题。">
@@ -173,8 +173,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>github + Hexo 创建博客成功，已经可以在浏览器访问具有Hello Hexo的博客，但是在再次 hexo g，hexo d之后无法访问新创建的博客，新建的博客没有被提交到github中，尝试解决这个问题。</p>
-<a id="more"></a>
+        <p>github + Hexo 创建博客成功，已经可以在浏览器访问具有Hello Hexo的博客，但是在再次 hexo g，hexo d之后无法访问新创建的博客，新建的博客没有被提交到github中，尝试解决这个问题。<br><a id="more"></a></p>
 <p>问题：博客可以在本地预览，但是不能通过 “hexo d”上传到github</p>
 <p>报错提示：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">E:\junlegaoblog\blog&gt;hexo s -p 5000</div><div class="line"></div><div class="line"></div><div class="line">E:\junlegaoblog\blog&gt;hexo new <span class="string">"test"</span></div><div class="line">INFO  Created: E:\junlegaoblog\blog\<span class="built_in">source</span>\_posts\<span class="built_in">test</span>-1.md</div><div class="line"></div><div class="line">E:\junlegaoblog\blog&gt;hexo s -p 5000</div><div class="line">INFO  Start processing</div><div class="line">ERROR Process failed: _posts/first blog.md</div><div class="line">TypeError: Cannot <span class="built_in">read</span> property <span class="string">'offset'</span> of null</div><div class="line">    at Object.exports.timezone (E:\junlegaoblog\blog\node_modules\hexo\lib\plugins\processor\common.js:44:40)</div><div class="line">    at E:\junlegaoblog\blog\node_modules\hexo\lib\plugins\processor\post.js:83:42</div><div class="line">    at tryCatcher (E:\junlegaoblog\blog\node_modules\bluebird\js\release\util.js:16:23)</div><div class="line">    at Promise._settlePromiseFromHandler (E:\junlegaoblog\blog\node_modules\bluebird\js\release\promise.js:509:35)</div><div class="line">    at Promise._settlePromise (E:\junlegaoblog\blog\node_modules\bluebird\js\release\promise.js:569:18)</div><div class="line">    .......</div></pre></td></tr></table></figure></p>
 <p>原因：因为在配_config.yml时配置错误。<br>错误地方：timezone配置错误<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Site</span></div><div class="line">title: junlegao</div><div class="line">subtitle: <span class="string">"道可道，非常道。名可名，非常名。"</span></div><div class="line">description: <span class="string">"无为而为之，为而无为也。"</span></div><div class="line">author: <span class="string">"樂"</span></div><div class="line">language: zh-CN</div><div class="line">timezone: Asia/Nanjing</div></pre></td></tr></table></figure></p>
@@ -272,6 +271,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2017/06/28/20170628/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          20170628
+        
+      </div>
+    </a>
   
   
     <a href="/2017/06/15/first blog/" id="article-nav-older" class="article-nav-link-wrap">
@@ -381,6 +389,10 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">一代过去，一代又来，地却永远长存。日头出来，日头落下，急归所出之地。风往南刮，又往北转，不住的旋转，而且返回转行远道。江河都往海里流，海却不满。江河从何处流，仍归何处还。</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
