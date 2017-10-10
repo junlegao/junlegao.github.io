@@ -154,6 +154,74 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-20171010-活体检测2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/10/20171010-活体检测2/">活体检测论文</a>
+    </h1>
+  
+
+        
+        <a href="/2017/10/10/20171010-活体检测2/" class="archive-article-date">
+  	<time datetime="2017-10-10T01:05:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>复习：上一章初识活体检测方法，方法有三，纹理检测、基于运动一致性检测、基于人脸三维结构检验；</p>
+<ul>
+<li>纹理方法(1)基于图像中的颜色，根据图像阴影、图像模糊、图像高光三部分进行活体检测比对，先对对象进行成像模型(根据光线等原因)，在图像基础上进行二次采集，二次采集获得人脸颜色、高光等等参数，比对其中存在的图像阴影、图像模糊及图像高光识别活体；(2)另一种是基于费舍尔方法(个人感觉是机器学习的方向)，将人脸分成不同区块，对不同区块特征进行提取，分析，集合费舍尔比值获得描述子(个人理解为描述脸部特征的向量)，对其进行向量化，人后再向量池化，最后通过将向量池中配费舍尔系数进行特征提取，最后获得人脸的特征向量，进行活体检测；</li>
+<li>人脸三维结构即通过两次相位角的差异，，选取关键点、关键帧，恢复初始人脸结构，然后对人脸结构进行配准，如果是真人脸时，恢复出正常人脸，但是如果是照片时，犹豫在角度上差异等无法直接恢复，视频的话，也由于扁平的图像导致恢复的结构有问题；</li>
+<li>基于运动一致性的活体检测方法，及将人体分为11个区域，根据区域划分为区域，提取其光流(某时刻该像素点的位置变化速率)及光流域，然后计算其光流模值和变化角度，最终提取出<em>序列频率</em>、<em>光流模值直方图</em>、<em>序列相关性</em> 三个参数，比较其前景、背景变化程度；脸部变形程度、运动背景变形程度等参数。</li>
+</ul>
+<p>今天读 盘海玲. 人脸识别系统中活体检测技术[J]. 科技资讯，先大致重新了解下人脸识别中的活体检测技术，希望对活体检测技术有新一步的了解，然后再继续进行研读，在研读之后，近两三天研读人脸识别，做一份简单的计划，做好计划之后，开始按计划进行继续解读人脸识别技术。</p>
+<p>本章博客首先解读来自2015年的一篇期刊，论文影响不是很高，但略有小记，仅供个人参考理解。</p>
+        
+          <a class="article-more-a" href="/2017/10/10/20171010-活体检测2/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">活体检测论文二</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/10/10/20171010-活体检测2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
     <article id="post-20171009 -活体检测1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -610,56 +678,6 @@
 
 
   
-    <article id="post-blog-test" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/17/blog-test/">Hexo 博客无法上传的问题</a>
-    </h1>
-  
-
-        
-        <a href="/2017/06/17/blog-test/" class="archive-article-date">
-  	<time datetime="2017-06-17T02:12:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>github + Hexo 创建博客成功，已经可以在浏览器访问具有Hello Hexo的博客，但是在再次 hexo g，hexo d之后无法访问新创建的博客，新建的博客没有被提交到github中，尝试解决这个问题。<br>
-        
-          <a class="article-more-a" href="/2017/06/17/blog-test/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/17/blog-test/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -760,11 +778,15 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">门禁系统防尾随问题概述</a>
+                <a href="javascript:void(0)" class="js-tag color4">活体检测论文初识</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">活体检测论文初识</a>
+                <a href="javascript:void(0)" class="js-tag color3">活体检测论文二</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">门禁系统防尾随问题概述</a>
               </li>
             
             <div class="clearfix"></div>

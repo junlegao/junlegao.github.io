@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://gorgegao.club">
-  <title>20170723 需求实践分析 | junlegao</title>
+  <title>活体检测论文 | junlegao</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="软件需求最佳实践—-需求实践现状分析  软件项目成败的原因及思考~   失败是因为需求变动、客户未参与、用户期望不切实际&amp;amp;提供不需要的&amp;amp;不完整的需求…那么原因呢，改进呢？">
+  <meta name="description" content="复习：上一章初识活体检测方法，方法有三，纹理检测、基于运动一致性检测、基于人脸三维结构检验；  纹理方法(1)基于图像中的颜色，根据图像阴影、图像模糊、图像高光三部分进行活体检测比对，先对对象进行成像模型(根据光线等原因)，在图像基础上进行二次采集，二次采集获得人脸颜色、高光等等参数，比对其中存在的图像阴影、图像模糊及图像高光识别活体；(2)另一种是基于费舍尔方法(个人感觉是机器学习的方向)，将人">
+<meta name="keywords" content="活体检测论文二">
 <meta property="og:type" content="article">
-<meta property="og:title" content="20170723 需求实践分析">
-<meta property="og:url" content="http://gorgegao.club/2017/07/23/20170723-需求实践分析/index.html">
+<meta property="og:title" content="活体检测论文">
+<meta property="og:url" content="http://gorgegao.club/2017/10/10/20171010-活体检测2/index.html">
 <meta property="og:site_name" content="junlegao">
-<meta property="og:description" content="软件需求最佳实践—-需求实践现状分析  软件项目成败的原因及思考~   失败是因为需求变动、客户未参与、用户期望不切实际&amp;amp;提供不需要的&amp;amp;不完整的需求…那么原因呢，改进呢？">
-<meta property="og:updated_time" content="2017-07-23T14:34:13.766Z">
+<meta property="og:description" content="复习：上一章初识活体检测方法，方法有三，纹理检测、基于运动一致性检测、基于人脸三维结构检验；  纹理方法(1)基于图像中的颜色，根据图像阴影、图像模糊、图像高光三部分进行活体检测比对，先对对象进行成像模型(根据光线等原因)，在图像基础上进行二次采集，二次采集获得人脸颜色、高光等等参数，比对其中存在的图像阴影、图像模糊及图像高光识别活体；(2)另一种是基于费舍尔方法(个人感觉是机器学习的方向)，将人">
+<meta property="og:updated_time" content="2017-10-10T05:27:31.913Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="20170723 需求实践分析">
-<meta name="twitter:description" content="软件需求最佳实践—-需求实践现状分析  软件项目成败的原因及思考~   失败是因为需求变动、客户未参与、用户期望不切实际&amp;amp;提供不需要的&amp;amp;不完整的需求…那么原因呢，改进呢？">
+<meta name="twitter:title" content="活体检测论文">
+<meta name="twitter:description" content="复习：上一章初识活体检测方法，方法有三，纹理检测、基于运动一致性检测、基于人脸三维结构检验；  纹理方法(1)基于图像中的颜色，根据图像阴影、图像模糊、图像高光三部分进行活体检测比对，先对对象进行成像模型(根据光线等原因)，在图像基础上进行二次采集，二次采集获得人脸颜色、高光等等参数，比对其中存在的图像阴影、图像模糊及图像高光识别活体；(2)另一种是基于费舍尔方法(个人感觉是机器学习的方向)，将人">
   
     <link rel="alternative" href="/atom.xml" title="junlegao" type="application/atom+xml">
   
@@ -153,42 +154,60 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-20170723-需求实践分析" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-20171010-活体检测2" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      20170723 需求实践分析
+      活体检测论文
     </h1>
   
 
         
-        <a href="/2017/07/23/20170723-需求实践分析/" class="archive-article-date">
-  	<time datetime="2017-07-23T13:28:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-23</time>
+        <a href="/2017/10/10/20171010-活体检测2/" class="archive-article-date">
+  	<time datetime="2017-10-10T01:05:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="软件需求最佳实践—-需求实践现状分析"><a href="#软件需求最佳实践—-需求实践现状分析" class="headerlink" title="软件需求最佳实践—-需求实践现状分析"></a>软件需求最佳实践—-需求实践现状分析</h1><p>  软件项目成败的原因及思考~</p>
-<p>  失败是因为需求变动、客户未参与、用户期望不切实际&amp;提供不需要的&amp;不完整的需求…那么原因呢，改进呢？</p>
+        <p>复习：上一章初识活体检测方法，方法有三，纹理检测、基于运动一致性检测、基于人脸三维结构检验；</p>
+<ul>
+<li>纹理方法(1)基于图像中的颜色，根据图像阴影、图像模糊、图像高光三部分进行活体检测比对，先对对象进行成像模型(根据光线等原因)，在图像基础上进行二次采集，二次采集获得人脸颜色、高光等等参数，比对其中存在的图像阴影、图像模糊及图像高光识别活体；(2)另一种是基于费舍尔方法(个人感觉是机器学习的方向)，将人脸分成不同区块，对不同区块特征进行提取，分析，集合费舍尔比值获得描述子(个人理解为描述脸部特征的向量)，对其进行向量化，人后再向量池化，最后通过将向量池中配费舍尔系数进行特征提取，最后获得人脸的特征向量，进行活体检测；</li>
+<li>人脸三维结构即通过两次相位角的差异，，选取关键点、关键帧，恢复初始人脸结构，然后对人脸结构进行配准，如果是真人脸时，恢复出正常人脸，但是如果是照片时，犹豫在角度上差异等无法直接恢复，视频的话，也由于扁平的图像导致恢复的结构有问题；</li>
+<li>基于运动一致性的活体检测方法，及将人体分为11个区域，根据区域划分为区域，提取其光流(某时刻该像素点的位置变化速率)及光流域，然后计算其光流模值和变化角度，最终提取出<em>序列频率</em>、<em>光流模值直方图</em>、<em>序列相关性</em> 三个参数，比较其前景、背景变化程度；脸部变形程度、运动背景变形程度等参数。</li>
+</ul>
+<p>今天读 盘海玲. 人脸识别系统中活体检测技术[J]. 科技资讯，先大致重新了解下人脸识别中的活体检测技术，希望对活体检测技术有新一步的了解，然后再继续进行研读，在研读之后，近两三天研读人脸识别，做一份简单的计划，做好计划之后，开始按计划进行继续解读人脸识别技术。</p>
+<p>本章博客首先解读来自2015年的一篇期刊，论文影响不是很高，但略有小记，仅供个人参考理解。</p>
 <a id="more"></a>
-<h2 id="软件项目失败带来的思考"><a href="#软件项目失败带来的思考" class="headerlink" title="软件项目失败带来的思考"></a>软件项目失败带来的思考</h2><p>一副形象漫画</p>
-<h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><ol>
-<li>沟通失真（用户–&gt;需求人员–&gt;设计人员–&gt;开发人员对需求理解逐层递减，最终减到8%左右）<br>问题所在：交流存在失真<br>解决方案：文档、重复（Review)</li>
-<li>客户需求放大（用户要么说不，要么添油加醋）<br> 问题所在：客户也不知道他要什么，希望以较小的成本获利，且对技术不了解，当了解当更好的方法时，会随时添加新需求。<br> 解决方案：少向客户问他要什么，多问为什么他需要，真正动机是什么。</li>
-<li>项目经理的需求控制<br> 问题所在：中国实际中项目经理负责多个职位，在沟通中由于各种原因对需求进行误解。<br> 解决方法：多问Why,为什么他们需要解决这种，为什么要做，从用户角度出发。</li>
-<li>分析人员的技术加工<br> 问题所在：需求分析，系统分析在技术层次，如在技术框架选型、技术能力中加东西。（P:选择Scala、选React）<br> 解决方案：本质在于分析业务，对于实现的业务进行分析即可。</li>
-<li>编码人员的断章取义<br> 问题所在：理解误差<br> 戒语：业务是需求之魂。</li>
-</ol>
-<h3 id="透过表象分析本质"><a href="#透过表象分析本质" class="headerlink" title="透过表象分析本质"></a>透过表象分析本质</h3><h3 id="方法论与需求工作"><a href="#方法论与需求工作" class="headerlink" title="方法论与需求工作"></a>方法论与需求工作</h3><ol>
-<li>需求分析人员对技术方法的评论在于适用性。白猫黑猫 ，抓到老鼠就是好猫~管你C/S，B/S，搞定用户就OK~<br>一个小tip：工作经验不丰富的人，用C/S去吧，对浏览器熟悉点的，在用B/S,请不要问为什么，不太想解释太多什么叫地址栏，什么叫设置兼容模式。。</li>
-<li>软件工程方法论<br>现在在敏捷开发和</li>
-<li>开发思想</li>
-</ol>
+<h3 id="来源"><a href="#来源" class="headerlink" title="来源"></a>来源</h3><p> 盘海玲. 人脸识别系统中活体检测技术[J]. 科技资讯</p>
+<h4 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h4><p>  人脸识别技术是生物识别技术领域内的一个分支，是目前最受关注的一项生物技术之一，人脸识别技术已经有具体应用，但是在处理人脸识别的三大攻击方式：照片、视频、人脸模型方式进行攻击人脸识别系统时，对其攻击处理，不同系统有其特有的应对措施，本篇论文总结三个方向<em>人脸的细微运动</em>、<em>3D人脸重建</em>、<em>红外人体检测</em> 三方面领域原理分析。</p>
+<h4 id="细节介绍"><a href="#细节介绍" class="headerlink" title="细节介绍"></a>细节介绍</h4><h5 id="1、人脸细微动作：适用于照片及模型攻击的应对。"><a href="#1、人脸细微动作：适用于照片及模型攻击的应对。" class="headerlink" title="1、人脸细微动作：适用于照片及模型攻击的应对。"></a>1、人脸细微动作：适用于照片及模型攻击的应对。</h5><h6 id="原理："><a href="#原理：" class="headerlink" title="原理："></a>原理：</h6><p>照片和模型无法和真脸一般做出一些细微动作线索，可以根据判断是否做出眨眼、张嘴、甚至是说出固定数字等方法判断其是否为真脸。</p>
+<h6 id="方法："><a href="#方法：" class="headerlink" title="方法："></a>方法：</h6><ul>
+<li>采用人脸经典算法(霍夫变换法、变形模板法、边缘特征分析法、对称变换法等)进行特征值提取和判断；</li>
+<li>从较大的特征集中选取少量的关键特征，产生高效的强分类器；</li>
+<li>用瀑布算法将多个强分类器合成复杂分类器，快速去除背景、选择关键部位</li>
+<li>(论文中无，不过接下来应该是用得到的特征值进行比对，看是否符合微变形的特征吧)</li>
+</ul>
+<h5 id="2、3D人脸重建：适用于图片、视频攻击。"><a href="#2、3D人脸重建：适用于图片、视频攻击。" class="headerlink" title="2、3D人脸重建：适用于图片、视频攻击。"></a>2、3D人脸重建：适用于图片、视频攻击。</h5><h6 id="原理：-1"><a href="#原理：-1" class="headerlink" title="原理："></a>原理：</h6><p>将人脸看作一个坐标系下由若干个点(几百个)组成的形状，根据方法提取其中获取的点，对其进行人脸重新构建，视频或照片由于提取方法的原因，可能会导致无法识别，之后验证其活体性？(自我理解)</p>
+<h6 id="方法：-1"><a href="#方法：-1" class="headerlink" title="方法："></a>方法：</h6><ul>
+<li>人脸标准化到一个统一的标准方向和位置，人脸由其中数百个点组成；</li>
+<li>均匀采样顶点，使用球面谐波函数算法，对形状和纹理进行区分处理；</li>
+<li>人脸的姿态只和其中关键点的特征位置相关，稀疏统计模型建立；</li>
+<li>n个顶点获取3D形状，按照给定的2D图像点上的坐标恢复3D形状顶点，得到人脸精细的3D图像；</li>
+<li>结合人的纹理图像、姿态的校正获取精确人脸模型。</li>
+</ul>
+<h5 id="3、红外活体检测：适合照片、视频及模型"><a href="#3、红外活体检测：适合照片、视频及模型" class="headerlink" title="3、红外活体检测：适合照片、视频及模型"></a>3、红外活体检测：适合照片、视频及模型</h5><h6 id="原理：-2"><a href="#原理：-2" class="headerlink" title="原理："></a>原理：</h6><p>图片、视频、模型表面无温度，根据人体温度产生的红外感应会被皮肤发散，从而使皮下血液系统呈现独特的面部信号，获取面部热像图。</p>
+<h6 id="方法：-2"><a href="#方法：-2" class="headerlink" title="方法："></a>方法：</h6><p>产生同温线而形成的特征提取实现识别</p>
+<ul>
+<li>每张脸包含数百个或者更多封闭的同温线；</li>
+<li>提取同温特征，用包含该特征的区域的标准模板进行提取；</li>
+<li>用几何分析方法分析同温线形状；</li>
+<li>分析的结果产生的值就用于人脸活体检测。</li>
+</ul>
 
       
 
@@ -218,6 +237,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">活体检测论文二</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -268,7 +298,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://gorgegao.club/2017/07/23/20170723-需求实践分析/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://gorgegao.club/2017/10/10/20171010-活体检测2/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -282,18 +312,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/07/27/20170727-不同项目需求视图/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          20170727  不同项目需求视图
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/07/06/blog/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">测试用例及测试的基本原则</div>
+    <a href="/2017/09/21/20171009 -活体检测1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">活体检测论文</div>
       <i class="icon-circle-right"></i>
     </a>
   
