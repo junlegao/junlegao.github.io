@@ -154,29 +154,36 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-blog-test" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-隐藏，待整理/20171010-活体检测" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/17/blog-test/">Hexo 博客无法上传的问题</a>
+      <a class="article-title" href="/2017/10/10/隐藏，待整理/20171010-活体检测/">活体检测论文</a>
     </h1>
   
 
         
-        <a href="/2017/06/17/blog-test/" class="archive-article-date">
-  	<time datetime="2017-06-17T02:12:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-17</time>
+        <a href="/2017/10/10/隐藏，待整理/20171010-活体检测/" class="archive-article-date">
+  	<time datetime="2017-10-10T01:05:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>github + Hexo 创建博客成功，已经可以在浏览器访问具有Hello Hexo的博客，但是在再次 hexo g，hexo d之后无法访问新创建的博客，新建的博客没有被提交到github中，尝试解决这个问题。<br>
+        <p>复习：上一章初识活体检测方法，方法有三，纹理检测、基于运动一致性检测、基于人脸三维结构检验；</p>
+<ul>
+<li>纹理方法(1)基于图像中的颜色，根据图像阴影、图像模糊、图像高光三部分进行活体检测比对，先对对象进行成像模型(根据光线等原因)，在图像基础上进行二次采集，二次采集获得人脸颜色、高光等等参数，比对其中存在的图像阴影、图像模糊及图像高光识别活体；(2)另一种是基于费舍尔方法(个人感觉是机器学习的方向)，将人脸分成不同区块，对不同区块特征进行提取，分析，集合费舍尔比值获得描述子(个人理解为描述脸部特征的向量)，对其进行向量化，人后再向量池化，最后通过将向量池中配费舍尔系数进行特征提取，最后获得人脸的特征向量，进行活体检测；</li>
+<li>人脸三维结构即通过两次相位角的差异，，选取关键点、关键帧，恢复初始人脸结构，然后对人脸结构进行配准，如果是真人脸时，恢复出正常人脸，但是如果是照片时，犹豫在角度上差异等无法直接恢复，视频的话，也由于扁平的图像导致恢复的结构有问题；</li>
+<li>基于运动一致性的活体检测方法，及将人体分为11个区域，根据区域划分为区域，提取其光流(某时刻该像素点的位置变化速率)及光流域，然后计算其光流模值和变化角度，最终提取出<em>序列频率</em>、<em>光流模值直方图</em>、<em>序列相关性</em> 三个参数，比较其前景、背景变化程度；脸部变形程度、运动背景变形程度等参数。</li>
+</ul>
+<p>今天读 盘海玲. 人脸识别系统中活体检测技术[J]. 科技资讯，先大致重新了解下人脸识别中的活体检测技术，希望对活体检测技术有新一步的了解，然后再继续进行研读，在研读之后，近两三天研读人脸识别，做一份简单的计划，做好计划之后，开始按计划进行继续解读人脸识别技术。</p>
+<p>本章博客首先解读来自2015年的一篇期刊，论文影响不是很高，但略有小记，仅供个人参考理解。</p>
         
-          <a class="article-more-a" href="/2017/06/17/blog-test/#more">more >></a>
+          <a class="article-more-a" href="/2017/10/10/隐藏，待整理/20171010-活体检测/#more">more >></a>
         
       
 
@@ -185,11 +192,22 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">活体检测论文二</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/17/blog-test/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/10/10/隐藏，待整理/20171010-活体检测/">展开全文 >></a>
         </p>
       
 
@@ -204,29 +222,73 @@
 
 
   
-    <article id="post-first blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-隐藏，待整理/20171009 -活体检测1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/15/first blog/">Hexo+github 创建注意事项</a>
+      <a class="article-title" href="/2017/09/21/隐藏，待整理/20171009 -活体检测1/">活体检测论文</a>
     </h1>
   
 
         
-        <a href="/2017/06/15/first blog/" class="archive-article-date">
-  	<time datetime="2017-06-15T13:40:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-15</time>
+        <a href="/2017/09/21/隐藏，待整理/20171009 -活体检测1/" class="archive-article-date">
+  	<time datetime="2017-09-21T01:05:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-21</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>就想说github+hexo配置博客注意几点。</p>
+        <p>18日，与金老师讨论人脸识别问题，讨论深入点，在尾随问题中的人数识别需要结合人体型识别问题，进行深入的研究，而下一步需要做的就是把设计到在环境中统计人数的论文或者是识别人形的论文全部拿出来研究一番，在看完论文基础上继续进行图像识别，人数检测方面的研究。(此方面设计主要为图像识别方向)</p>
+<p>同时，金老师又一次提到人脸识别中的活体检测问题，何为金老师说的活体检测，即在人脸识别中，需要通过眨眨眼、张张嘴等问题证明是个活人，从而避免是照片等产生的攻击。</p>
         
-          <a class="article-more-a" href="/2017/06/15/first blog/#more">more >></a>
+          <a class="article-more-a" href="/2017/09/21/隐藏，待整理/20171009 -活体检测1/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">活体检测论文初识</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/21/隐藏，待整理/20171009 -活体检测1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
+    <article id="post-20170801-项目管理的一些心得体会" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
         
       
 
@@ -239,7 +301,369 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/15/first blog/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/09/14/20170801-项目管理的一些心得体会/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
+    <article id="post-隐藏，待整理/20170913防尾随问题 " class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/13/隐藏，待整理/20170913防尾随问题 /">防尾随问题基本理论研究</a>
+    </h1>
+  
+
+        
+        <a href="/2017/09/13/隐藏，待整理/20170913防尾随问题 /" class="archive-article-date">
+  	<time datetime="2017-09-13T00:39:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>问题：门禁刷卡进入，存在问题，A、B两人，A有正式门禁卡，A可刷卡进入，B无门禁身份；A刷卡进入后，由于门禁未及时关闭，B尾随进入。此时，门禁系统未录入尾随人员信息，存在安全隐患。</p>
+        
+          <a class="article-more-a" href="/2017/09/13/隐藏，待整理/20170913防尾随问题 /#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">门禁系统防尾随问题概述</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/13/隐藏，待整理/20170913防尾随问题 /">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
+    <article id="post-RFID学习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="RFID-标签位置感知技术综述"><a href="#RFID-标签位置感知技术综述" class="headerlink" title="RFID 标签位置感知技术综述"></a>RFID 标签位置感知技术综述</h2><h3 id="作者：邱兰馨-黄樟钦-梁笑轩"><a href="#作者：邱兰馨-黄樟钦-梁笑轩" class="headerlink" title="作者：邱兰馨, 黄樟钦, 梁笑轩"></a>作者：邱兰馨, 黄樟钦, 梁笑轩</h3><h4 id="摘要总结：位置信息中利用GPS、手机等其他设备可以进行定位，但室内“最后一米”定位采用RFID更为精确。这篇文章从-参数提取-和-位置估计-方面总结RFID标签位置感知技术关键，还介绍RFID的应用及未来发展方向。"><a href="#摘要总结：位置信息中利用GPS、手机等其他设备可以进行定位，但室内“最后一米”定位采用RFID更为精确。这篇文章从-参数提取-和-位置估计-方面总结RFID标签位置感知技术关键，还介绍RFID的应用及未来发展方向。" class="headerlink" title="摘要总结：位置信息中利用GPS、手机等其他设备可以进行定位，但室内“最后一米”定位采用RFID更为精确。这篇文章从 参数提取 和 位置估计 方面总结RFID标签位置感知技术关键，还介绍RFID的应用及未来发展方向。"></a>摘要总结：位置信息中利用GPS、手机等其他设备可以进行定位，但室内“最后一米”定位采用RFID更为精确。这篇文章从 <em>参数提取</em> 和 <em>位置估计</em> 方面总结RFID标签位置感知技术关键，还介绍RFID的应用及未来发展方向。</h4><p>作者：yacogo<br>链接：<a href="http://www.jianshu.com/p/abaff828100d" target="_blank" rel="external">http://www.jianshu.com/p/abaff828100d</a><br>來源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<h5 id="英文名：Indoor-location-aware-technology-for-RFID-tag"><a href="#英文名：Indoor-location-aware-technology-for-RFID-tag" class="headerlink" title="英文名：Indoor location-aware technology for RFID tag:"></a>英文名：Indoor location-aware technology for RFID tag:</h5>
+        
+          <a class="article-more-a" href="/2017/09/07/RFID学习/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/07/RFID学习/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
+    <article id="post-20170731-软件需求与需求工程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/31/20170731-软件需求与需求工程/">20170731 软件需求与需求工程</a>
+    </h1>
+  
+
+        
+        <a href="/2017/07/31/20170731-软件需求与需求工程/" class="archive-article-date">
+  	<time datetime="2017-07-31T05:06:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-31</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="什么是软件需求"><a href="#什么是软件需求" class="headerlink" title="什么是软件需求"></a>什么是软件需求</h2><p>  个人认为软件需求就是业务逻辑+实现方法；<br>  在这里，作者认为然间需求是“业务知识+问题列表+其它因素”，具体是什么情况我们下面一一解读，一起分析。</p>
+<p>  业务知识：业务事件、业务实体和业务规则；</p>
+<p>  问题列表：在工作中遇到的困难与故障（软件开发时需要解决的东西）；</p>
+<p>  其它因素：一些设计约束和非功能性的东西。</p>
+        
+          <a class="article-more-a" href="/2017/07/31/20170731-软件需求与需求工程/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/07/31/20170731-软件需求与需求工程/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
+    <article id="post-20170727-不同项目需求视图" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/27/20170727-不同项目需求视图/">20170727  不同项目需求视图</a>
+    </h1>
+  
+
+        
+        <a href="/2017/07/27/20170727-不同项目需求视图/" class="archive-article-date">
+  	<time datetime="2017-07-27T01:37:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-27</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="信息系统需求视图"><a href="#信息系统需求视图" class="headerlink" title="信息系统需求视图"></a>信息系统需求视图</h2><p>  毫无疑问，不同向项目有不同的需求，但是需求之间有什么共通的东西呢。本章分析下需求中存在的一些能够共通的东西，尤其是在信息管理系统中一些需要注意的部分。</p>
+        
+          <a class="article-more-a" href="/2017/07/27/20170727-不同项目需求视图/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/07/27/20170727-不同项目需求视图/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
+    <article id="post-20170723-需求实践分析" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/23/20170723-需求实践分析/">20170723 需求实践分析</a>
+    </h1>
+  
+
+        
+        <a href="/2017/07/23/20170723-需求实践分析/" class="archive-article-date">
+  	<time datetime="2017-07-23T13:28:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="软件需求最佳实践—-需求实践现状分析"><a href="#软件需求最佳实践—-需求实践现状分析" class="headerlink" title="软件需求最佳实践—-需求实践现状分析"></a>软件需求最佳实践—-需求实践现状分析</h1><p>  软件项目成败的原因及思考~</p>
+<p>  失败是因为需求变动、客户未参与、用户期望不切实际&amp;提供不需要的&amp;不完整的需求…那么原因呢，改进呢？</p>
+        
+          <a class="article-more-a" href="/2017/07/23/20170723-需求实践分析/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/07/23/20170723-需求实践分析/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
+    <article id="post-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/06/blog/">测试用例及测试的基本原则</a>
+    </h1>
+  
+
+        
+        <a href="/2017/07/06/blog/" class="archive-article-date">
+  	<time datetime="2017-07-06T01:17:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="软件测试用例编写规范"><a href="#软件测试用例编写规范" class="headerlink" title="软件测试用例编写规范"></a>软件测试用例编写规范</h1><h2 id="测试用例准备编写"><a href="#测试用例准备编写" class="headerlink" title="测试用例准备编写"></a>测试用例准备编写</h2><p>根据需求规格说明书和设计说明书，详细理解用户的真正需求，并且对软件所实现的功能已经准确理解，然后着手制订测试用例。<br>
+        
+          <a class="article-more-a" href="/2017/07/06/blog/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/07/06/blog/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
+    <article id="post-20170628" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/28/20170628/">20170628</a>
+    </h1>
+  
+
+        
+        <a href="/2017/06/28/20170628/" class="archive-article-date">
+  	<time datetime="2017-06-28T13:29:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="产品经理"><a href="#产品经理" class="headerlink" title="产品经理"></a>产品经理</h1><h2 id="基础阶段和产品苏伟"><a href="#基础阶段和产品苏伟" class="headerlink" title="基础阶段和产品苏伟"></a>基础阶段和产品苏伟</h2><h3 id="互联网思维："><a href="#互联网思维：" class="headerlink" title="互联网思维："></a>互联网思维：</h3>
+        
+          <a class="article-more-a" href="/2017/06/28/20170628/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">一代过去，一代又来，地却永远长存。日头出来，日头落下，急归所出之地。风往南刮，又往北转，不住的旋转，而且返回转行远道。江河都往海里流，海却不满。江河从何处流，仍归何处还。</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/06/28/20170628/">展开全文 >></a>
         </p>
       
 
@@ -256,7 +680,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
     </nav>
   
 
@@ -348,6 +772,18 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">活体检测资料--源自10年博士论文</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">活体检测资料--源自知乎</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">活体检测资料</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">一代过去，一代又来，地却永远长存。日头出来，日头落下，急归所出之地。风往南刮，又往北转，不住的旋转，而且返回转行远道。江河都往海里流，海却不满。江河从何处流，仍归何处还。</a>
