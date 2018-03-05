@@ -6,17 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://gorgegao.club">
-  <title>Archives: 2017 | junlegao</title>
+  <title>Hexo 博客无法上传的问题 | junlegao</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="无为而为之，为而无为也。">
+  <meta name="description" content="github + Hexo 创建博客成功，已经可以在浏览器访问具有Hello Hexo的博客，但是在再次 hexo g，hexo d之后无法访问新创建的博客，新建的博客没有被提交到github中，尝试解决这个问题。">
 <meta property="og:type" content="website">
-<meta property="og:title" content="junlegao">
-<meta property="og:url" content="http://gorgegao.club/archives/2017/index.html">
+<meta property="og:title" content="Hexo 博客无法上传的问题">
+<meta property="og:url" content="http://gorgegao.club/隐藏，待整理/blog-test.html">
 <meta property="og:site_name" content="junlegao">
-<meta property="og:description" content="无为而为之，为而无为也。">
+<meta property="og:description" content="github + Hexo 创建博客成功，已经可以在浏览器访问具有Hello Hexo的博客，但是在再次 hexo g，hexo d之后无法访问新创建的博客，新建的博客没有被提交到github中，尝试解决这个问题。">
+<meta property="og:updated_time" content="2017-07-06T01:59:48.738Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="junlegao">
-<meta name="twitter:description" content="无为而为之，为而无为也。">
+<meta name="twitter:title" content="Hexo 博客无法上传的问题">
+<meta name="twitter:description" content="github + Hexo 创建博客成功，已经可以在浏览器访问具有Hello Hexo的博客，但是在再次 hexo g，hexo d之后无法访问新创建的博客，新建的博客没有被提交到github中，尝试解决这个问题。">
   
     <link rel="alternative" href="/atom.xml" title="junlegao" type="application/atom+xml">
   
@@ -152,49 +153,134 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="page-undefined" class="article article-type-page " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/15/first blog/" class="archive-article-date">
-  	<time datetime="2017-06-15T13:40:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-15</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/15/first blog/">Hexo+github 创建注意事项</a>
+    <h1 class="article-title" itemprop="name">
+      Hexo 博客无法上传的问题
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/隐藏，待整理/blog-test.html" class="archive-article-date">
+  	<time datetime="2017-06-17T02:12:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>github + Hexo 创建博客成功，已经可以在浏览器访问具有Hello Hexo的博客，但是在再次 hexo g，hexo d之后无法访问新创建的博客，新建的博客没有被提交到github中，尝试解决这个问题。<br><a id="more"></a></p>
+<p>问题：博客可以在本地预览，但是不能通过 “hexo d”上传到github</p>
+<p>报错提示：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">E:\junlegaoblog\blog&gt;hexo s -p 5000</div><div class="line"></div><div class="line"></div><div class="line">E:\junlegaoblog\blog&gt;hexo new <span class="string">"test"</span></div><div class="line">INFO  Created: E:\junlegaoblog\blog\<span class="built_in">source</span>\_posts\<span class="built_in">test</span>-1.md</div><div class="line"></div><div class="line">E:\junlegaoblog\blog&gt;hexo s -p 5000</div><div class="line">INFO  Start processing</div><div class="line">ERROR Process failed: _posts/first blog.md</div><div class="line">TypeError: Cannot <span class="built_in">read</span> property <span class="string">'offset'</span> of null</div><div class="line">    at Object.exports.timezone (E:\junlegaoblog\blog\node_modules\hexo\lib\plugins\processor\common.js:44:40)</div><div class="line">    at E:\junlegaoblog\blog\node_modules\hexo\lib\plugins\processor\post.js:83:42</div><div class="line">    at tryCatcher (E:\junlegaoblog\blog\node_modules\bluebird\js\release\util.js:16:23)</div><div class="line">    at Promise._settlePromiseFromHandler (E:\junlegaoblog\blog\node_modules\bluebird\js\release\promise.js:509:35)</div><div class="line">    at Promise._settlePromise (E:\junlegaoblog\blog\node_modules\bluebird\js\release\promise.js:569:18)</div><div class="line">    .......</div></pre></td></tr></table></figure></p>
+<p>原因：因为在配_config.yml时配置错误。<br>错误地方：timezone配置错误<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Site</span></div><div class="line">title: junlegao</div><div class="line">subtitle: <span class="string">"道可道，非常道。名可名，非常名。"</span></div><div class="line">description: <span class="string">"无为而为之，为而无为也。"</span></div><div class="line">author: <span class="string">"樂"</span></div><div class="line">language: zh-CN</div><div class="line">timezone: Asia/Nanjing</div></pre></td></tr></table></figure></p>
+<p>注意上面的timezone,timezone为时区，博主以为是擅自将原来的 Asia/Shanghai修改为 Asia/Nanjing，导致出现这个问题。</p>
+<p>P:问题很弱智，提出来供大家参考。同时，告诫诸位，在修改配置文件的时候，看清楚配置信心再去配置，不要导致博主这样的惨状发生，卡了好几天才发现，呜呜呜…</p>
 
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>多谢大神打赏~<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://gorgegao.club/隐藏，待整理/blog-test.html" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
+
   
 
-    
+
+
+
+  
+
+  
+
+  
+
+  
 
 
           </div>
@@ -218,7 +304,7 @@
 		mathjax: false,
 		isHome: false,
 		isPost: false,
-		isArchive: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

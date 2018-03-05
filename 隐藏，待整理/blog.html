@@ -6,17 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://gorgegao.club">
-  <title>Archives: 2017 | junlegao</title>
+  <title>测试用例及测试的基本原则 | junlegao</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="无为而为之，为而无为也。">
+  <meta name="description" content="软件测试用例编写规范测试用例准备编写根据需求规格说明书和设计说明书，详细理解用户的真正需求，并且对软件所实现的功能已经准确理解，然后着手制订测试用例。">
 <meta property="og:type" content="website">
-<meta property="og:title" content="junlegao">
-<meta property="og:url" content="http://gorgegao.club/archives/2017/index.html">
+<meta property="og:title" content="测试用例及测试的基本原则">
+<meta property="og:url" content="http://gorgegao.club/隐藏，待整理/blog.html">
 <meta property="og:site_name" content="junlegao">
-<meta property="og:description" content="无为而为之，为而无为也。">
+<meta property="og:description" content="软件测试用例编写规范测试用例准备编写根据需求规格说明书和设计说明书，详细理解用户的真正需求，并且对软件所实现的功能已经准确理解，然后着手制订测试用例。">
+<meta property="og:updated_time" content="2017-07-08T09:18:18.676Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="junlegao">
-<meta name="twitter:description" content="无为而为之，为而无为也。">
+<meta name="twitter:title" content="测试用例及测试的基本原则">
+<meta name="twitter:description" content="软件测试用例编写规范测试用例准备编写根据需求规格说明书和设计说明书，详细理解用户的真正需求，并且对软件所实现的功能已经准确理解，然后着手制订测试用例。">
   
     <link rel="alternative" href="/atom.xml" title="junlegao" type="application/atom+xml">
   
@@ -152,49 +153,155 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="page-undefined" class="article article-type-page " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/15/first blog/" class="archive-article-date">
-  	<time datetime="2017-06-15T13:40:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-15</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/15/first blog/">Hexo+github 创建注意事项</a>
+    <h1 class="article-title" itemprop="name">
+      测试用例及测试的基本原则
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/隐藏，待整理/blog.html" class="archive-article-date">
+  	<time datetime="2017-07-06T01:17:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="软件测试用例编写规范"><a href="#软件测试用例编写规范" class="headerlink" title="软件测试用例编写规范"></a>软件测试用例编写规范</h1><h2 id="测试用例准备编写"><a href="#测试用例准备编写" class="headerlink" title="测试用例准备编写"></a>测试用例准备编写</h2><p>根据需求规格说明书和设计说明书，详细理解用户的真正需求，并且对软件所实现的功能已经准确理解，然后着手制订测试用例。<br><a id="more"></a></p>
+<h2 id="测试用例指定的原则"><a href="#测试用例指定的原则" class="headerlink" title="测试用例指定的原则"></a>测试用例指定的原则</h2><p>测试用例要包括欲测试的功能、应输入的数据和预期的输出结果。测试数据应该选用少量、高效的测试数据进行尽可能完备的测试；基本目标是：设计一组发现某个错误或某类错误的测试数据，测试用例应覆盖方面：</p>
+<ol>
+<li>正确性测试：测试用例首先要满足所有功能需求；</li>
+<li>容错性测试：正常数据，正常显示数据，完成功能，异常数据，异常提示，非法数据，非法操作，警报处理；</li>
+<li>完整（安全）性测试：有权限验证，对于无权限用户无法进行操作 ，或者有保障性操作；</li>
+<li>接口间测试：各模块间的关联性需要考虑，数据输入、输出修改具有一致性；</li>
+<li>数据库测试：依据数据库设计规范对软件系统的数据库结构、数据表及其之间的数据调用关系进行测试。（不太懂）</li>
+<li>边界自分析法： 对边界值数据进行特殊注意，进行处理验证；</li>
+<li>压力测试：输入多条记录测试；</li>
+<li>等价划分：将数据分类，如正常类、异常类，有效类、无效类；</li>
+<li>错误推测：根据直觉推测错误；</li>
+<li>效率测试：尤其对数据库操作，进行预计时间测试；</li>
+<li>可理解性：理解和使用该系统的难以度进行测试；</li>
+<li>可移植性：不同操作系统及硬件环境下的运行情况；</li>
+<li>回归测试：测试–修改–再测；</li>
+<li>比较测试：将已经开发的产品或同类型的产品进行测试。</li>
+</ol>
+<ol>
+<li>模块测试、集成测试： 1、2、6、8、9;</li>
+<li>单元测试：重点测试5；</li>
+<li>组合(集成)测试：重点测试数据输入输出及逻辑，即4;</li>
+<li>系统测试： 3、7、10、11、12、14;</li>
+<li>其中压力测试和可移植性测试如果是公司的系列产品，可以选用其中有代表性的产品进行一次代表性测试即可。</li>
+<li>GMPS基础测试用例设计完成后，其他的测试项目只编写设计与之不同部分的测试用例。</li>
+</ol>
+<p>P: 我司暂时处于初步测试阶段，对于测试，暂时只考虑模块、单元及系统测试，即使用正确性、完整性、接口、边界分析、压力、等价、错误推测及回归测试方法进行测试，别的暂时不考虑。<br>  在后期需要完善阶段，对容错性数据要进行测试，进行修改整合；对数据库进行完善，进行数据库测试；对可理解性进行测试，完善功能；<br>  在装机之后，需要考虑可移植性测试；<br>  在上线之后，进行比较测试，完善产品。</p>
 
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>多谢大神打赏~<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://gorgegao.club/隐藏，待整理/blog.html" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
+
   
 
-    
+
+
+
+  
+
+  
+
+  
+
+  
 
 
           </div>
@@ -218,7 +325,7 @@
 		mathjax: false,
 		isHome: false,
 		isPost: false,
-		isArchive: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

@@ -6,17 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://gorgegao.club">
-  <title>Archives: 2017 | junlegao</title>
+  <title>junlegao</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="无为而为之，为而无为也。">
+  <meta name="description" content="RFID 标签位置感知技术综述作者：邱兰馨, 黄樟钦, 梁笑轩摘要总结：位置信息中利用GPS、手机等其他设备可以进行定位，但室内“最后一米”定位采用RFID更为精确。这篇文章从 参数提取 和 位置估计 方面总结RFID标签位置感知技术关键，还介绍RFID的应用及未来发展方向。作者：yacogo链接：http://www.jianshu.com/p/abaff828100d來源：简书著作权归作者所有">
 <meta property="og:type" content="website">
 <meta property="og:title" content="junlegao">
-<meta property="og:url" content="http://gorgegao.club/archives/2017/index.html">
+<meta property="og:url" content="http://gorgegao.club/隐藏，待整理/RFID学习.html">
 <meta property="og:site_name" content="junlegao">
-<meta property="og:description" content="无为而为之，为而无为也。">
+<meta property="og:description" content="RFID 标签位置感知技术综述作者：邱兰馨, 黄樟钦, 梁笑轩摘要总结：位置信息中利用GPS、手机等其他设备可以进行定位，但室内“最后一米”定位采用RFID更为精确。这篇文章从 参数提取 和 位置估计 方面总结RFID标签位置感知技术关键，还介绍RFID的应用及未来发展方向。作者：yacogo链接：http://www.jianshu.com/p/abaff828100d來源：简书著作权归作者所有">
+<meta property="og:image" content="http://oued1pp7s.bkt.clouddn.com/RFID%E4%BD%8D%E7%BD%AE%E6%84%9F%E5%BA%94%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF.png">
+<meta property="og:updated_time" content="2017-09-14T12:51:46.120Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="junlegao">
-<meta name="twitter:description" content="无为而为之，为而无为也。">
+<meta name="twitter:description" content="RFID 标签位置感知技术综述作者：邱兰馨, 黄樟钦, 梁笑轩摘要总结：位置信息中利用GPS、手机等其他设备可以进行定位，但室内“最后一米”定位采用RFID更为精确。这篇文章从 参数提取 和 位置估计 方面总结RFID标签位置感知技术关键，还介绍RFID的应用及未来发展方向。作者：yacogo链接：http://www.jianshu.com/p/abaff828100d來源：简书著作权归作者所有">
+<meta name="twitter:image" content="http://oued1pp7s.bkt.clouddn.com/RFID%E4%BD%8D%E7%BD%AE%E6%84%9F%E5%BA%94%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF.png">
   
     <link rel="alternative" href="/atom.xml" title="junlegao" type="application/atom+xml">
   
@@ -152,49 +155,179 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="page-undefined" class="article article-type-page " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="RFID-标签位置感知技术综述"><a href="#RFID-标签位置感知技术综述" class="headerlink" title="RFID 标签位置感知技术综述"></a>RFID 标签位置感知技术综述</h2><h3 id="作者：邱兰馨-黄樟钦-梁笑轩"><a href="#作者：邱兰馨-黄樟钦-梁笑轩" class="headerlink" title="作者：邱兰馨, 黄樟钦, 梁笑轩"></a>作者：邱兰馨, 黄樟钦, 梁笑轩</h3><h4 id="摘要总结：位置信息中利用GPS、手机等其他设备可以进行定位，但室内“最后一米”定位采用RFID更为精确。这篇文章从-参数提取-和-位置估计-方面总结RFID标签位置感知技术关键，还介绍RFID的应用及未来发展方向。"><a href="#摘要总结：位置信息中利用GPS、手机等其他设备可以进行定位，但室内“最后一米”定位采用RFID更为精确。这篇文章从-参数提取-和-位置估计-方面总结RFID标签位置感知技术关键，还介绍RFID的应用及未来发展方向。" class="headerlink" title="摘要总结：位置信息中利用GPS、手机等其他设备可以进行定位，但室内“最后一米”定位采用RFID更为精确。这篇文章从 参数提取 和 位置估计 方面总结RFID标签位置感知技术关键，还介绍RFID的应用及未来发展方向。"></a>摘要总结：位置信息中利用GPS、手机等其他设备可以进行定位，但室内“最后一米”定位采用RFID更为精确。这篇文章从 <em>参数提取</em> 和 <em>位置估计</em> 方面总结RFID标签位置感知技术关键，还介绍RFID的应用及未来发展方向。</h4><p>作者：yacogo<br>链接：<a href="http://www.jianshu.com/p/abaff828100d" target="_blank" rel="external">http://www.jianshu.com/p/abaff828100d</a><br>來源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<h5 id="英文名：Indoor-location-aware-technology-for-RFID-tag"><a href="#英文名：Indoor-location-aware-technology-for-RFID-tag" class="headerlink" title="英文名：Indoor location-aware technology for RFID tag:"></a>英文名：Indoor location-aware technology for RFID tag:</h5><a id="more"></a>
+<p>名次解释：</p>
+<table>
+<thead>
+<tr>
+<th>名次</th>
+<th style="text-align:right">英文释义</th>
+<th style="text-align:center">解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基站</td>
+<td style="text-align:right">base station</td>
+<td style="text-align:center">RFID阅读器</td>
+</tr>
+<tr>
+<td>待测目标</td>
+<td style="text-align:right">target</td>
+<td style="text-align:center">RFID标签</td>
+</tr>
+<tr>
+<td>锚节点</td>
+<td style="text-align:right">anchor</td>
+<td style="text-align:center">已知位置的标签</td>
+</tr>
+</tbody>
+</table>
+<p>内容：</p>
+<p><code>前提条件：基站位置已知（感应出的结果是基站的相对位置）</code></p>
+<p>措施/方法：</p>
+<p><code>基站在全局坐标系位置已知时，标签位置结果转换至全局坐标系下，现有 RFID 位置感知方法，多利用 RFID 系统通信过程中阅读器所接收到的标签响应情况，或是标签反射链路的信道参数来估计和反演标签所处的空间位置，主要包括参数提取和位置估计</code></p>
+<h6 id="参数提取研究概述"><a href="#参数提取研究概述" class="headerlink" title="参数提取研究概述"></a>参数提取研究概述</h6><p>早期：多采用标签的响应结果作为参数信息，根据 RFID 系统通信距离的有限性来大致估计标签距离。<br>进阶：随着对定位准确度需求的提升，到达<br>时延（ ToA/TDoA）、到达角度（ AoA）、到达信号强度（ RSS）、到达相位（ PoA/PDoA）等反映标签所处环境信息的信道参数陆续被用于反演标签位置。<br>超阶：对多元参数进行综合分析，或是采用多径谱（ mulitpath profile） 作为参数信息的位置感知方法则显示出了更好的抗干扰能力。</p>
+<ol>
+<li>最基本，通过判断标签在或者不在进行判断。<br>实例运用：在博物馆内的自动语音导航，通过判断标签在或者不在进行标签相对位置估计。</li>
+<li><p>通过RFID系统为用户提供的信号接收强度、到达相位等通道信息参数，进行更加深入、精准的研究。</p>
+<p> 2.1  信号到达时间<br>   Bechteler提出 SAW ID-tags 方法利用信号到达时间（ToA).  </p>
+<pre><code>计算距离：  d=cτ&lt;sub&gt;n&lt;/sub&gt;
+注：c为光速;
+    τ标签发射信号的时间与该信号到达阅读器的时间差。
+</code></pre><p>   Stezer采用标签信号到达多个阅读器之间的相对时间差，分别求出标签到阅读器的相对距离，再根据阅读器之间已知的位置关系求解绝对距离。</p>
+<p>   <em>评论：此种方法要求时间测量到达纳秒级，而且要实现时钟同步，实际情况中很难实现</em></p>
+<p>   2.2 信号接收强度<br>   根据 Friis 电磁波自由空间传播模型，接收信号强度与标签-阅读器之间的距离 d 的四次方呈反比.</p>
+<p>   根据统计的对数距离路径损耗模型有:<br>   P(bB)=P<sub>0</sub>(dB)+10nlg(d/d<sub>0</sub>)+X<sub>σ</sub>(dB)</p>
+<p>   <em>评论：基于接收信号强度的位置感知方法是目前最为普遍的</em></p>
+</li>
+</ol>
+<h6 id="位置估计研究概述"><a href="#位置估计研究概述" class="headerlink" title="位置估计研究概述"></a>位置估计研究概述</h6><p>由参数信息反演标签位置这一处理过程和相应的处理方法，可以大致归纳为几何估计法、指纹估计法、成本函数最小化和贝叶斯估计法四类。总体思路都是在空间内布置多个读卡器，根据读卡器强度参数确定位置。</p>
+<ol>
+<li><p>几何估计法：计法借助阅读器和标签间的距离或角度关系求解非线性方程组来计算目标位置。</p>
+</li>
+<li><p>借鉴无线局域网定位原理为 RFID 位置感知提供了研究思路。</p>
+</li>
+<li>成本函数最小化估计法全息图谱方法、为代表。<br> 代价函数最小化，将空间分成W*L个像素点并以Xsub(w,j)代表（w,l)处的位置</li>
+<li><p>贝叶斯估计法:在移动轨迹跟踪中有较为广泛的应用</p>
+</li>
+<li><p>指纹估计发：建立指纹库，先根据测试数据、信号强度数据建立信号强度、信号强度值的概率分布状况，之后将待测标签的参数信息与待测标签与指纹库的信息进行匹配，在通过选中的参考标签对已知位置估计。 （匹配算法可根据机器学习只能怪的KNN、最大期望估计、支持向量机估计等）</p>
+</li>
+</ol>
+<h6 id="其它相关技术"><a href="#其它相关技术" class="headerlink" title="其它相关技术"></a>其它相关技术</h6><p>除参数信息提取准确度、位置估计方法的有效性外，RFID位置感应技术还收到技术本省的影响和制约，如防碰撞协议，远距离通信技术和标签技术。</p>
+<p>####### 链路及防碰撞协议<br>RFID是无线通信技术，由阅读器经过天线发送符合协议的电磁波唤醒标签，标签返回数据信息给阅读器。<br>  标签天线的辐射方向往往在某个方向强，其它方向弱；但是一般理论上，都认为读卡器天线是全向的信号强度相同。<br>  多个阅读器同时发送时信号碰撞问题导致信息采样缺失并给环境带来额外的射频干扰。<br>  多个标签在同一时隙向阅读器发送信息，标签间也会产生冲突；<br>  大规模环境下标签防碰撞方法对位置感知效率和精度也有重要影响。</p>
+<p>####### 远距离通信技术<br>  通信距离较近是制约RFID位置感知技术的重要原因（无源的）采用高频10~11.1GHZ作为通信测试平台，影响较小。</p>
+<p>####### 标签技术<br>  有源、无源、半有源标签等。<br>    WISP标签是一种可编程的半有源标签，利用接受到的阅读器信号为自身集成的光学或声学传感器提供所需能量，从而利用可见光或超声波作为辅助信息进行读卡器感知，实现读卡器的感应。</p>
+<h4 id="RFID应用前景"><a href="#RFID应用前景" class="headerlink" title="RFID应用前景"></a>RFID应用前景</h4><p>通过 RFID 位置感知技术获得贴标物体或人员的位置信息能够应用在许多实际场合中，大致可分为基于位置的自动化控制及服务、目标搜索与监控、活动识别与安全、增强现实及人机交互等。<br>在控制方面， Wang 等[56]利用标签信息判断物体形状使机器人实现自动抓取；<br>在服务方面，文献[5]根据 RFID 的响应范围，为靠近相应标签并持有专用 RFID 阅读器的游客自动提供展品的语音介绍。<br>利用货架商品的位置变化，<br>对消费者的行为进行分析挖掘，从而判断消费者对不同商品的偏好程度；<br>在可视化方面， Malla 等[57]借助标签位置感知构建室内空间地图，并结合增强现实技术描绘和重建室内环境。</p>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>在具体实施过程中，通常根据应用场景的具体情况，从准确度、精确度、实时性、系统成本等方面来综合选择合适的参数及估计方法。<br><img src="http://oued1pp7s.bkt.clouddn.com/RFID%E4%BD%8D%E7%BD%AE%E6%84%9F%E5%BA%94%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF.png" alt="RFID图片"></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>多谢大神打赏~<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/15/first blog/" class="archive-article-date">
-  	<time datetime="2017-06-15T13:40:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/15/first blog/">Hexo+github 创建注意事项</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://gorgegao.club/隐藏，待整理/RFID学习.html" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
+
   
 
-    
+
+
+
+  
+
+  
+
+  
+
+  
 
 
           </div>
@@ -218,7 +351,7 @@
 		mathjax: false,
 		isHome: false,
 		isPost: false,
-		isArchive: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
