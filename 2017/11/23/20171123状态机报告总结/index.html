@@ -6,17 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://gorgegao.club">
-  <title>Archives: 2017/10 | junlegao</title>
+  <title>20171119 有限状态机报告总结 | junlegao</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="无为而为之，为而无为也。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="junlegao">
-<meta property="og:url" content="http://gorgegao.club/archives/2017/10/index.html">
+  <meta name="description" content="找到一篇RFID和状态机的论文，感觉和我们的项目很契合，而且整个建模过程和流程可以借鉴。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20171119 有限状态机报告总结">
+<meta property="og:url" content="http://gorgegao.club/2017/11/23/20171123状态机报告总结/index.html">
 <meta property="og:site_name" content="junlegao">
-<meta property="og:description" content="无为而为之，为而无为也。">
+<meta property="og:description" content="找到一篇RFID和状态机的论文，感觉和我们的项目很契合，而且整个建模过程和流程可以借鉴。">
+<meta property="og:updated_time" content="2018-05-23T03:19:14.856Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="junlegao">
-<meta name="twitter:description" content="无为而为之，为而无为也。">
+<meta name="twitter:title" content="20171119 有限状态机报告总结">
+<meta name="twitter:description" content="找到一篇RFID和状态机的论文，感觉和我们的项目很契合，而且整个建模过程和流程可以借鉴。">
   
     <link rel="alternative" href="/atom.xml" title="junlegao" type="application/atom+xml">
   
@@ -152,98 +153,250 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-20171123状态机报告总结" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/10/19/20171019 活体检测/" class="archive-article-date">
-  	<time datetime="2017-10-18T23:48:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-19</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/10/19/20171019 活体检测/">活体检测之基于运动一致性的检测方法</a>
+    <h1 class="article-title" itemprop="name">
+      20171119 有限状态机报告总结
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">活体检测论文初识</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/10/16/20171015 活体检测汇报/" class="archive-article-date">
-  	<time datetime="2017-10-16T00:25:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-16</time>
+        
+        <a href="/2017/11/23/20171123状态机报告总结/" class="archive-article-date">
+  	<time datetime="2017-11-23T02:16:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-23</time>
 </a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>找到一篇RFID和状态机的论文，感觉和我们的项目很契合，而且整个建模过程和流程可以借鉴。<br><a id="more"></a></p>
+<p>文献 ：基于有限状态机的 RFID 流数据过滤与清理技术</p>
+<h6 id="罗元剑-姜建国-王思叶-等-基于有限状态机的RFID流数据过滤与清理技术-J-软件学报-2014-8-1713-1728"><a href="#罗元剑-姜建国-王思叶-等-基于有限状态机的RFID流数据过滤与清理技术-J-软件学报-2014-8-1713-1728" class="headerlink" title="罗元剑, 姜建国, 王思叶,等. 基于有限状态机的RFID流数据过滤与清理技术[J]. 软件学报, 2014(8):1713-1728."></a>罗元剑, 姜建国, 王思叶,等. 基于有限状态机的RFID流数据过滤与清理技术[J]. 软件学报, 2014(8):1713-1728.</h6><p>提出了一种基于有限状态机的 RFID 流数据过滤与清理方法.</p>
+<ol>
+<li>该方法利用RFID 标签数据的三元组模型(EPC,Position,Timestamp)<br>与有限状态机理论,一方面根据信号读取位置建立等效的物理空间位置状态模型,对相邻物理空间位置状态进行合并,以降低系统对被监控对象(RFID 标签)的误读;另一方面,通过对RFID 流数据的分析,对同一物理空间位置状态与时间状态内的冗余数据进行过滤与清理.</li>
+</ol>
+<ul>
+<li><p>然后交代数据处理架构及应用场景</p>
+</li>
+<li><p>在算法描述上</p>
+<ul>
+<li>使用有效状态机模型描述阅读器状态</li>
+<li>定义标签即状态概念</li>
+<li>设计数据过滤与清晰算法<br>仔细看了其算法，就是在多阅读器间读取RFID，然后将物理空间位置隔绝，然后剔除同一读写器相同状态的，更新不同状态的。</li>
+</ul>
+</li>
+<li><p>实验中</p>
+<ul>
+<li>检测RFID天线增加与漏读情况测试</li>
+<li>对距离检测进行描述</li>
+<li>测试实际情况下的冗余数据与经过清洗后数据对比</li>
+<li>保证数据可以有效提取，做实验验证即可</li>
+<li>和其它实验方法作比对<br>主要突破，其保证漏读、误读率为0，不过在距离方面其可行性有所损耗及差异。</li>
+</ul>
+</li>
+<li><p>通过实验表明：<br>本文提出的基于有限状态机的过滤与清理方法能够有效地过滤与清理同一状态下的 RFID 标签数据,提取有效监控数据.与传统的基于时间窗口的 RFID 流数据过滤方法(文献[3,9,10])相比,该方法不仅能够从时间维度上对数据进行过滤与清理,而且能够提取特定监控时间段内的数据,同时可以从物理空间位置维度上对数据进行过滤与清理,提取有效的监控数据,并过滤掉系统外标签数据,即干扰数据。</p>
+</li>
+</ul>
+<p>以文献 ：基于有限状态机的 RFID 流数据过滤与清理技术</p>
+<h6 id="罗元剑-姜建国-王思叶-等-基于有限状态机的RFID流数据过滤与清理技术-J-软件学报-2014-8-1713-1728-1"><a href="#罗元剑-姜建国-王思叶-等-基于有限状态机的RFID流数据过滤与清理技术-J-软件学报-2014-8-1713-1728-1" class="headerlink" title="罗元剑, 姜建国, 王思叶,等. 基于有限状态机的RFID流数据过滤与清理技术[J]. 软件学报, 2014(8):1713-1728."></a>罗元剑, 姜建国, 王思叶,等. 基于有限状态机的RFID流数据过滤与清理技术[J]. 软件学报, 2014(8):1713-1728.</h6><p>为启发，做的思路</p>
+<h6 id="方向应该是有效可行但是在具体思路也有，但是考虑开题报告问题，不知道能否直接再次修改！"><a href="#方向应该是有效可行但是在具体思路也有，但是考虑开题报告问题，不知道能否直接再次修改！" class="headerlink" title="方向应该是有效可行但是在具体思路也有，但是考虑开题报告问题，不知道能否直接再次修改！"></a>方向应该是有效可行但是在具体思路也有，但是考虑开题报告问题，不知道能否直接再次修改！</h6><h4 id="思路1"><a href="#思路1" class="headerlink" title="思路1"></a>思路1</h4><p>题目及方法预备：<br>使用有限状态机对RFID进行数据过滤与清理</p>
+<p>也可修改为基于有限状态机多流程数据交互过程</p>
+<h6 id="背景："><a href="#背景：" class="headerlink" title="背景："></a>背景：</h6><p>两辆押运车进行转接操作时，有效数据的提取及无效数据的丢弃。对有效RFID数据的可靠性认证。</p>
+<p>专利1：可以写基于状态码的有限状态机数据过滤(基于应用场景写)<br>专利2：基于状态码的状态机流程转换方法(基于应用场景写)</p>
+<h6 id="基于有限状态创新点："><a href="#基于有限状态创新点：" class="headerlink" title="基于有限状态创新点："></a>基于有限状态创新点：</h6><ul>
+<li>引入有限状态机对多种不同数据进行建模</li>
+<li>引入状态码联合区多模复杂环境下状态</li>
+<li>设计有限状态机清理算法</li>
+<li>对有限状态机这一模型进行评价</li>
+</ul>
+<h6 id="内容思路及初步考虑"><a href="#内容思路及初步考虑" class="headerlink" title="内容思路及初步考虑"></a>内容思路及初步考虑</h6><pre><code>1、首先将交互数据抽象为原始“三元组”，将此动态转化的流程抽象为时间自动机，然后在此基础上写时间转化与自动机转化的问题。
+&lt;!-- 我们的话&lt;位置，时间，状态码&gt;
+&lt;状态码&gt;  &lt;预警，激活状态，物体类别，位置，预警信息，预警 --&gt;
+
+2、单独将其中的数据清理与数据过滤抽象出来，
+过程：
+1）RFID三元组数据模型抽象出来，我们使用的到的，根据是否为车载(位置)，是否警报(标志)、发出时间(Timestamp)、警报信息(内容)、网络位置(Ip)建立五元组；
+2）基于状态码将其统一划分，为其标定各种意义；
+3）流数据处理架构：将监控系统抽象为数据监控过程
+
+3、为其建立有限状态机模型
+小论文中建立状态机转换模型，对其进行无效数据清理
+
+4、定义 无效标签 有效标签 两类
+正常读取标签、错误识别标签、漏读取标签、误读取标签
+标签数据有效性及标签数据无效性等定义
+
+5、然后再此过程中建立一种对数据的清理模型！
+  算法设计到基于状态码的剔除数据方法
+
+6、扩展
+涉及到的算法的话考虑 只考虑合适使用服务器数据与本地数据的替换，对其进行可信处理！(新旧状态替换)，难点在于其中的状态可信及数据延迟问题！
+
+7、实验
+然后，实验做模拟数据处理，在10个标签或者N个标签下其误识别率和正确识别率的过程！
+</code></pre><h5 id="扩展：相信云端数据还是本地数据！"><a href="#扩展：相信云端数据还是本地数据！" class="headerlink" title="扩展：相信云端数据还是本地数据！"></a>扩展：相信云端数据还是本地数据！</h5><h4 id="思路2：考虑入车出车过程，抽象为一个RFID状态机转化的过程"><a href="#思路2：考虑入车出车过程，抽象为一个RFID状态机转化的过程" class="headerlink" title="思路2：考虑入车出车过程，抽象为一个RFID状态机转化的过程"></a>思路2：考虑入车出车过程，抽象为一个RFID状态机转化的过程</h4><p>  考虑入车出车过程，将其抽象为一个RFID状态机转化的过程！然后在此基础上进行数据转换！</p>
+<p>考虑在其中是不是还存在另外一个思路：有限状态机的流程处理<br>基有限状态机的动态流程处理</p>
+<pre><code>1)建立RFID多远组模型，然后在模型基础上对数据进行统一规划
+
+2)定义状态码，对不同区域事件类型进行区分
+
+3)状态转换于状态码结合，处理动态地图与物资信息转换
+
+4)在这边建立数据流处理框架！
+
+5)根据其数据转换建立数据更替交换流程！
+
+6)尝试抽象出一种数据流模型！ 在交换及运行过程中对数据交换的处理。(使用伪代码实现)
+
+6)实验：以现场数据交互做模型
+</code></pre><p>流程处理方面的话，使用流程处理机制与RFID状态机转换来写</p>
+<!-- 状态流图，状态分享见沈浪……
+使用小论文可见 -->
+<h4 id="一些其他类似的状态机的处理题目及思路"><a href="#一些其他类似的状态机的处理题目及思路" class="headerlink" title="一些其他类似的状态机的处理题目及思路"></a>一些其他类似的状态机的处理题目及思路</h4><p>学术：</p>
+<ul>
+<li>一种基于有限状态机的RFID数据清理算法</li>
+</ul>
+<p>专硕：</p>
+<ul>
+<li><p>有限状态机在RFID多物资预警中的应用</p>
+</li>
+<li><p>一种基于有限状态机的数据清理的押运管理系统</p>
+<p>将其中的数据清理方法加入应用<br>中间加个创新点为引入状态码对时间、空间及数据进行划分，有利于多方面状态管理</p>
+</li>
+<li><p>一种基于有限状态机的门禁管理系统应用</p>
+<p>这样的话是不是可以将有限状态机和门禁系统结合起来。</p>
+<!-- 将机器学习的知识和门禁中的知识结合起来，忘记思路了 -->
+</li>
+<li><p>一种基于有限状态机的读写器确定程序</p>
+</li>
+</ul>
+<p>(其中有专利通过使用信号强度的方式进行判断欧式距离)</p>
+<p>小论文<br>(单机情况下(两台读写器)，通过有限状态机的方式进行判断)<br>扩展讨论<br>(联网情况下，使用云端、本地状态码综合使用！)</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>多谢大神打赏~<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/10/16/20171015 活体检测汇报/">活体检测论文汇报</a>
-    </h1>
-  
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">活体检测资料</a>
-        		</li>
-      		
-		</ul>
-	</div>
+      
 
-          
-
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://gorgegao.club/2017/11/23/20171123状态机报告总结/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2018/03/07/HTML-复习/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          HTML 复习
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2017/11/22/2017-11-22多模活体检测方法验证及人脸识别验证/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">多模活体检测方法验证及人脸识别验证</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -266,8 +419,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
